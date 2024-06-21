@@ -57,9 +57,10 @@
 				C.thresh()
 		user.visible_message("<span class='notice'>[user] threshes the stalks!</span>", \
 							"<span class='notice'>I thresh the stalks.</span>")
-		src.thresh()
+		user.changeNext_move(CLICK_CD_MELEE)
 		playsound(loc,"plantcross", 100, FALSE)
 		playsound(loc,"smashlimb", 50, FALSE)
+		src.thresh()
 		return
 //End of ported code
 	..()
